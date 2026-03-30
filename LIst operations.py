@@ -22,12 +22,12 @@ print("updated list:", numbers)
 
 # 6
 list1 = [5, 10, 15, 20]
-list2 = list1[:]   # copy using slicing
+list2 = list1[:]   
 print("original list:", list1)
 print("copied list:", list2)
 
 #  7
 list1 = [5, 10, 15, 20]
-list2 = list(list1)   # copy using constructor
+list2 = list(list1)   
 print("original list:", list1)
 print("copied list:", list2)
