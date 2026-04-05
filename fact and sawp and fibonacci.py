@@ -7,16 +7,20 @@ def factorial(n):
 print("Factorial:", factorial(5))
 
 # sawp
-a = 5
-b = 10
-temp = a
-a = b
-b = temp
-print(a, b)
+def swap(a, b):
+    temp = a
+    a = b
+    b = temp
+    return a, b
+x, y = 5, 10
+x, y = swap(x, y)
+print("After swap:", x, y)
 
 # Fibonacci 
-n = int(input())
-a, b = 0, 1
-for i in range(n):
-    print(a, end=" ")
-    a, b = b, a + b
+def fibonacci(n):
+    a, b = 0, 1
+    for i in range(n):
+        print(a, end=" ")
+        a, b = b, a + b
+num = int(input("Enter number: "))
+fibonacci(num)
